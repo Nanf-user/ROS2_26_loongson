@@ -1,0 +1,3 @@
+[console_scripts]
+path_blocked_tcp_sender = path_blocked_tcp_bridge.path_blocked_tcp_sender:main
+

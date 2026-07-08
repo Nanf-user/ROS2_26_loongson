@@ -1,0 +1,21 @@
+[1.635s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/path_blocked_tcp_bridge': PYTHONPATH=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_blocked_tcp_bridge build --build-base /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build install --record /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log --single-version-externally-managed install_data
+[1.976s] running egg_info
+[1.977s] writing ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/PKG-INFO
+[1.978s] writing dependency_links to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/dependency_links.txt
+[1.980s] writing entry points to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/entry_points.txt
+[1.980s] writing requirements to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/requires.txt
+[1.980s] writing top-level names to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/top_level.txt
+[1.983s] reading manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+[1.985s] writing manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+[1.985s] running build
+[1.985s] running build_py
+[1.985s] running install
+[1.986s] running install_lib
+[1.986s] running install_data
+[1.988s] running install_egg_info
+[1.991s] removing '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[1.991s] Copying ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge-0.0.0-py3.10.egg-info
+[1.991s] running install_scripts
+[2.019s] Installing path_blocked_tcp_sender script to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/path_blocked_tcp_bridge
+[2.021s] writing list of installed files to '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log'
+[2.071s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/path_blocked_tcp_bridge' returned '0': PYTHONPATH=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_blocked_tcp_bridge build --build-base /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build install --record /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log --single-version-externally-managed install_data

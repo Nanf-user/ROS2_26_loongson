@@ -1,0 +1,11 @@
+In file included from [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/src/core/ldlidar_driver.cpp:21[m[K:
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core/ldlidar_driver.h:[m[K In constructor ‘[01m[Kldlidar::LDLidarDriver::LDLidarDriver()[m[K’:
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core/ldlidar_driver.h:174:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kldlidar::LDLidarDriver::register_get_timestamp_handle_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  174 |     std::function<uint64_t (void) > [01;35m[Kregister_get_timestamp_handle_[m[K;
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core/ldlidar_driver.h:169:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kldlidar::LiPkg* ldlidar::LDLidarDriver::comm_pkg_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  169 |     LiPkg* [01;35m[Kcomm_pkg_[m[K;
+      |            [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/src/core/ldlidar_driver.cpp:27:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   27 | [01;35m[KLDLidarDriver[m[K::LDLidarDriver()
+      | [01;35m[K^~~~~~~~~~~~~[m[K

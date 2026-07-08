@@ -1,0 +1,7 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o[0m
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/src/simple_pursuit_controller.cpp:261:25:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+  261 |   nav2_core::Controller)
+      |                         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/simple_pursuit_controller.dir/build.make:76：CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/simple_pursuit_controller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

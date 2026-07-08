@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-5937a86c4fdb2b98752f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "simple_pursuit_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_pursuit_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_pursuit_controller-Release-03afcc51d7d1a80badf9.json",
+					"name" : "simple_pursuit_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_pursuit_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_pursuit_controller_uninstall-Release-cfed03942aacae613f4d.json",
+					"name" : "simple_pursuit_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-077dd595ce7ef8731b02.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller",
+		"source" : "/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

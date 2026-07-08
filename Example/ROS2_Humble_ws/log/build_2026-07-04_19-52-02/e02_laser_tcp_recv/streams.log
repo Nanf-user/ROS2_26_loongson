@@ -1,0 +1,96 @@
+[0.029s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv -DCMAKE_INSTALL_PREFIX=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv
+[0.114s] -- The C compiler identification is GNU 11.4.0
+[0.185s] -- The CXX compiler identification is GNU 11.4.0
+[0.195s] -- Detecting C compiler ABI info
+[0.293s] -- Detecting C compiler ABI info - done
+[0.302s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.303s] -- Detecting C compile features
+[0.304s] -- Detecting C compile features - done
+[0.308s] -- Detecting CXX compiler ABI info
+[0.487s] -- Detecting CXX compiler ABI info - done
+[0.503s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.503s] -- Detecting CXX compile features
+[0.511s] -- Detecting CXX compile features - done
+[0.525s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.780s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.872s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.922s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.926s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.935s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.945s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.959s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.998s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.005s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.119s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.154s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.197s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.205s] -- Looking for pthread.h
+[1.314s] -- Looking for pthread.h - found
+[1.314s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.425s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.425s] -- Found Threads: TRUE  
+[1.480s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.508s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.610s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.614s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.614s] -- Configured cppcheck include dirs: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/include;/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core;/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/dataprocess;/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/filter;/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/logger;/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/networkcom;/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/serialcom
+[1.614s] -- Configured cppcheck exclude dirs and/or files: 
+[1.623s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.623s] -- Configured cpplint exclude dirs and/or files: 
+[1.623s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.623s] -- Added test 'lint_cmake' to check CMake code style
+[1.623s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.626s] -- Added test 'uncrustify' to check C / C++ code style
+[1.628s] -- Configured uncrustify additional arguments: 
+[1.628s] -- Added test 'xmllint' to check XML markup files
+[1.628s] -- Configuring done
+[1.642s] -- Generating done
+[1.651s] -- Build files have been written to: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv
+[1.693s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv -DCMAKE_INSTALL_PREFIX=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv
+[1.694s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv -- -j6 -l6
+[1.804s] [ 12%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/src/demo.cpp.o[0m
+[1.808s] [ 25%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/ldlidar_driver/src/logger/log_module.cpp.o[0m
+[1.812s] [ 37%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/ldlidar_driver/src/filter/tofbf.cpp.o[0m
+[1.821s] [ 50%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/ldlidar_driver/src/core/ldlidar_driver.cpp.o[0m
+[1.825s] [ 62%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/ldlidar_driver/src/dataprocess/lipkg.cpp.o[0m
+[1.832s] [ 75%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp.o[0m
+[2.617s] [ 87%] [32mBuilding CXX object CMakeFiles/e02_laser_tcp_recv_node.dir/ldlidar_driver/src/serialcom/serial_interface_linux.cpp.o[0m
+[3.429s] In file included from [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/src/core/ldlidar_driver.cpp:21[m[K:
+[3.429s] [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core/ldlidar_driver.h:[m[K In constructor ‘[01m[Kldlidar::LDLidarDriver::LDLidarDriver()[m[K’:
+[3.429s] [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core/ldlidar_driver.h:174:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kldlidar::LDLidarDriver::register_get_timestamp_handle_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.429s]   174 |     std::function<uint64_t (void) > [01;35m[Kregister_get_timestamp_handle_[m[K;
+[3.430s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.430s] [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/include/core/ldlidar_driver.h:169:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kldlidar::LiPkg* ldlidar::LDLidarDriver::comm_pkg_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.430s]   169 |     LiPkg* [01;35m[Kcomm_pkg_[m[K;
+[3.430s]       |            [01;35m[K^~~~~~~~~[m[K
+[3.430s] [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/e02_laser_tcp_recv/ldlidar_driver/src/core/ldlidar_driver.cpp:27:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.430s]    27 | [01;35m[KLDLidarDriver[m[K::LDLidarDriver()
+[3.430s]       | [01;35m[K^~~~~~~~~~~~~[m[K
+[8.580s] [100%] [32m[1mLinking CXX executable e02_laser_tcp_recv_node[0m
+[8.981s] [100%] Built target e02_laser_tcp_recv_node
+[9.021s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv -- -j6 -l6
+[9.023s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv
+[9.043s] -- Install configuration: ""
+[9.043s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/lib/e02_laser_tcp_recv/e02_laser_tcp_recv_node
+[9.048s] -- Set runtime path of "/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/lib/e02_laser_tcp_recv/e02_laser_tcp_recv_node" to ""
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv//launch
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv//launch/ld19.launch.py
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv//launch/viewer_ld19.launch.py
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv//rviz
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv//rviz/ldlidar.rviz
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/ament_index/resource_index/package_run_dependencies/e02_laser_tcp_recv
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/ament_index/resource_index/parent_prefix_path/e02_laser_tcp_recv
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/environment/ament_prefix_path.sh
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/environment/ament_prefix_path.dsv
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/environment/path.sh
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/environment/path.dsv
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/local_setup.bash
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/local_setup.sh
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/local_setup.zsh
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/local_setup.dsv
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/package.dsv
+[9.049s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/ament_index/resource_index/packages/e02_laser_tcp_recv
+[9.052s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/cmake/e02_laser_tcp_recvConfig.cmake
+[9.053s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/cmake/e02_laser_tcp_recvConfig-version.cmake
+[9.057s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e02_laser_tcp_recv/share/e02_laser_tcp_recv/package.xml
+[9.058s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e02_laser_tcp_recv

@@ -1,0 +1,28 @@
+[0.195s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server -- -j6 -l6
+[1.118s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server -- -j6 -l6
+[1.118s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server
+[1.166s] -- Install configuration: ""
+[1.166s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/launch
+[1.166s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/launch/launch.py
+[1.172s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/launch/viewer_launch.py
+[1.172s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/map
+[1.172s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/map/my_map.yaml
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/map/my_map.pgm
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/rviz
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/rviz/map_server.rviz
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/ament_index/resource_index/package_run_dependencies/e06_map_server
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/ament_index/resource_index/parent_prefix_path/e06_map_server
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/environment/ament_prefix_path.sh
+[1.173s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/environment/ament_prefix_path.dsv
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/environment/path.sh
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/environment/path.dsv
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/local_setup.bash
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/local_setup.sh
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/local_setup.zsh
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/local_setup.dsv
+[1.174s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/package.dsv
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/ament_index/resource_index/packages/e06_map_server
+[1.174s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/cmake/e06_map_serverConfig.cmake
+[1.175s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/cmake/e06_map_serverConfig-version.cmake
+[1.175s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/e06_map_server/share/e06_map_server/package.xml
+[1.240s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/e06_map_server

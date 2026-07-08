@@ -1,0 +1,19 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d_publisher.hpp:46[m[K,
+                 from [01m[K/opt/ros/humble/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d_ros.hpp:48[m[K,
+                 from [01m[K/opt/ros/humble/include/nav2_core/controller.hpp:42[m[K,
+                 from [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/include/simple_pursuit_controller/simple_pursuit_controller.hpp:8[m[K,
+                 from [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/src/simple_pursuit_controller.cpp:1[m[K:
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/src/simple_pursuit_controller.cpp:[m[K In member function ‘[01m[Kvirtual geometry_msgs::msg::TwistStamped simple_pursuit_controller::SimplePursuitController::computeVelocityCommands(const PoseStamped&, const Twist&, nav2_core::GoalChecker*)[m[K’:
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/src/simple_pursuit_controller.cpp:144:15:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[Knode_[m[K’?
+  144 |   RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "computeVelocityCommands called");
+      |               [01;31m[K^~~~[m[K
+[01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/src/simple_pursuit_controller.cpp:144:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  144 |   [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "computeVelocityCommands called");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_pursuit_controller.dir/build.make:76：CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/simple_pursuit_controller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

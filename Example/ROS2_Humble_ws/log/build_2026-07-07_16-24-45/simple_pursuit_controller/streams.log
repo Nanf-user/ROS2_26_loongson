@@ -1,0 +1,32 @@
+[0.533s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller -- -j6 -l6
+[0.634s] [35m[1mConsolidate compiler generated dependencies of target simple_pursuit_controller[0m
+[0.679s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o[0m
+[9.233s] [100%] [32m[1mLinking CXX shared library libsimple_pursuit_controller.so[0m
+[9.557s] [100%] Built target simple_pursuit_controller
+[9.577s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller -- -j6 -l6
+[9.581s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller
+[9.593s] -- Install configuration: "Release"
+[9.593s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/lib/libsimple_pursuit_controller.so
+[9.593s] -- Set runtime path of "/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/lib/libsimple_pursuit_controller.so" to ""
+[9.593s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/include/simple_pursuit_controller
+[9.594s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/include/simple_pursuit_controller/simple_pursuit_controller
+[9.594s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/include/simple_pursuit_controller/simple_pursuit_controller/simple_pursuit_controller.hpp
+[9.594s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/simple_pursuit_controller.xml
+[9.594s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/simple_pursuit_controller.xml
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/ament_index/resource_index/package_run_dependencies/simple_pursuit_controller
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/ament_index/resource_index/parent_prefix_path/simple_pursuit_controller
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/environment/ament_prefix_path.sh
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/environment/ament_prefix_path.dsv
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/environment/path.sh
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/environment/path.dsv
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/local_setup.bash
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/local_setup.sh
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/local_setup.zsh
+[9.595s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/local_setup.dsv
+[9.595s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/package.dsv
+[9.596s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/ament_index/resource_index/packages/simple_pursuit_controller
+[9.596s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/ament_index/resource_index/nav2_core__pluginlib__plugin/simple_pursuit_controller
+[9.596s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/cmake/simple_pursuit_controllerConfig.cmake
+[9.596s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/cmake/simple_pursuit_controllerConfig-version.cmake
+[9.596s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/simple_pursuit_controller/share/simple_pursuit_controller/package.xml
+[9.600s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller

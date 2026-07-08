@@ -1,0 +1,10 @@
+[0.275s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller -- -j6 -l6
+[0.330s] [35m[1mConsolidate compiler generated dependencies of target simple_pursuit_controller[0m
+[0.355s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o[0m
+[3.724s] [01m[K/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/simple_pursuit_controller/src/simple_pursuit_controller.cpp:261:25:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[3.724s]   261 |   nav2_core::Controller)[01;31m[K;[m[K
+[3.724s]       |                         [01;31m[K^[m[K
+[5.136s] gmake[2]: *** [CMakeFiles/simple_pursuit_controller.dir/build.make:76：CMakeFiles/simple_pursuit_controller.dir/src/simple_pursuit_controller.cpp.o] 错误 1
+[5.137s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/simple_pursuit_controller.dir/all] 错误 2
+[5.137s] gmake: *** [Makefile:146：all] 错误 2
+[5.141s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/simple_pursuit_controller -- -j6 -l6

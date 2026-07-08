@@ -1,0 +1,29 @@
+[0.085s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead -- -j6 -l6
+[0.538s] [100%] Built target nav2_obstacle_ahead_plugin
+[0.539s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead -- -j6 -l6
+[0.544s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead
+[0.577s] -- Install configuration: ""
+[0.577s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/obstacle_ahead_plugin.xml
+[0.578s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/lib/libnav2_obstacle_ahead_plugin.so
+[0.578s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/include
+[0.578s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/include/nav2_obstacle_ahead
+[0.579s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/include/nav2_obstacle_ahead/obstacle_ahead_condition.hpp
+[0.579s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/behavior_trees
+[0.579s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/behavior_trees/navigate_with_obstacle_monitor.xml
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/ament_index/resource_index/package_run_dependencies/nav2_obstacle_ahead
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/ament_index/resource_index/parent_prefix_path/nav2_obstacle_ahead
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/environment/ament_prefix_path.sh
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/environment/ament_prefix_path.dsv
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/environment/path.sh
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/environment/path.dsv
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/local_setup.bash
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/local_setup.sh
+[0.580s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/local_setup.zsh
+[0.581s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/local_setup.dsv
+[0.581s] -- Installing: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/package.dsv
+[0.581s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/ament_index/resource_index/packages/nav2_obstacle_ahead
+[0.581s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/ament_index/resource_index/behaviortree_cpp_v3__pluginlib__plugin/nav2_obstacle_ahead
+[0.581s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/cmake/nav2_obstacle_aheadConfig.cmake
+[0.581s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/cmake/nav2_obstacle_aheadConfig-version.cmake
+[0.581s] -- Up-to-date: /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/nav2_obstacle_ahead/share/nav2_obstacle_ahead/package.xml
+[0.679s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/nav2_obstacle_ahead

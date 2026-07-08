@@ -1,0 +1,8 @@
+source;share/e05_slam_toolbox_mapping/hook/cmake_prefix_path.ps1
+source;share/e05_slam_toolbox_mapping/hook/cmake_prefix_path.dsv
+source;share/e05_slam_toolbox_mapping/hook/cmake_prefix_path.sh
+source;share/e05_slam_toolbox_mapping/local_setup.bash
+source;share/e05_slam_toolbox_mapping/local_setup.dsv
+source;share/e05_slam_toolbox_mapping/local_setup.ps1
+source;share/e05_slam_toolbox_mapping/local_setup.sh
+source;share/e05_slam_toolbox_mapping/local_setup.zsh

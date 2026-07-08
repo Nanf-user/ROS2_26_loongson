@@ -1,0 +1,4 @@
+source;share/e05_cartographer_mapping/local_setup.bash
+source;share/e05_cartographer_mapping/local_setup.dsv
+source;share/e05_cartographer_mapping/local_setup.sh
+source;share/e05_cartographer_mapping/local_setup.zsh

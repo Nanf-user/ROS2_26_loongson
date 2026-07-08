@@ -1,0 +1,2 @@
+source;share/e03_cmd_vel_tcp_send/environment/ament_prefix_path.sh
+source;share/e03_cmd_vel_tcp_send/environment/path.sh

@@ -1,0 +1,4 @@
+source;share/e04_mini_car_description/local_setup.bash
+source;share/e04_mini_car_description/local_setup.dsv
+source;share/e04_mini_car_description/local_setup.sh
+source;share/e04_mini_car_description/local_setup.zsh

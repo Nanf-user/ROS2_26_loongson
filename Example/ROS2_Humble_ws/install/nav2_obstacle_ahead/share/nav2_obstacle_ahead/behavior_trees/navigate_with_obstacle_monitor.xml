@@ -1,0 +1,49 @@
+<!--
+  在原行为树外层包裹 ReactiveSequence：
+  - ObstacleAhead: 每次 tick 检测前方障碍物并输出警告，始终返回 SUCCESS
+  - 原导航逻辑: 不变
+-->
+<root main_tree_to_execute="MainTree">
+
+  <!-- ====== 加载自定义插件 ====== -->
+  <BehaviorTree ID="MainTree">
+    <ReactiveSequence name="NavigateWithObstacleMonitor">
+
+      <!-- 前方障碍物检测节点 (始终返回 SUCCESS，不影响导航) -->
+      <ObstacleAhead
+        name="ObstacleMonitor"
+        distance_threshold="1.0"
+        angle_range="0.5"
+        scan_topic="/scan"/>
+
+      <!-- ====== 以下为原始导航行为树 ====== -->
+      <RecoveryNode number_of_retries="6" name="NavigateRecovery">
+        <PipelineSequence name="NavigateWithReplanning">
+          <RateController hz="1.0">
+            <RecoveryNode number_of_retries="1" name="ComputePathToPose">
+              <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+              <ClearEntireCostmap name="ClearGlobalCostmap-Context" service_name="global_costmap/clear_entirely_global_costmap"/>
+            </RecoveryNode>
+          </RateController>
+          <RecoveryNode number_of_retries="1" name="FollowPath">
+            <FollowPath path="{path}" controller_id="FollowPath"/>
+            <ClearEntireCostmap name="ClearLocalCostmap-Context" service_name="local_costmap/clear_entirely_local_costmap"/>
+          </RecoveryNode>
+        </PipelineSequence>
+        <ReactiveFallback name="RecoveryFallback">
+          <GoalUpdated/>
+          <RoundRobin name="RecoveryActions">
+            <Sequence name="ClearingActions">
+              <ClearEntireCostmap name="ClearLocalCostmap-Subtree" service_name="local_costmap/clear_entirely_local_costmap"/>
+              <ClearEntireCostmap name="ClearGlobalCostmap-Subtree" service_name="global_costmap/clear_entirely_global_costmap"/>
+            </Sequence>
+            <Wait wait_duration="5"/>
+            <BackUp backup_dist="0.30" backup_speed="0.05"/>
+          </RoundRobin>
+        </ReactiveFallback>
+      </RecoveryNode>
+      <!-- ====== 原始导航行为树结束 ====== -->
+
+    </ReactiveSequence>
+  </BehaviorTree>
+</root>

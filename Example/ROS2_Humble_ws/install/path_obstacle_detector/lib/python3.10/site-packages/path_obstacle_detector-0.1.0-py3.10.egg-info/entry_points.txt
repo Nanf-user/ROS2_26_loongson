@@ -1,0 +1,4 @@
+[console_scripts]
+path_obstacle_detector = path_obstacle_detector.path_obstacle_detector_node:main
+test_publisher = path_obstacle_detector.test_publisher:main
+

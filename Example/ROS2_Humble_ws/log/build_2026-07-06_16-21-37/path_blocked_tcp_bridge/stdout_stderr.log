@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info
+writing ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/PKG-INFO
+writing dependency_links to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/dependency_links.txt
+writing entry points to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/entry_points.txt
+writing requirements to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/requires.txt
+writing top-level names to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/top_level.txt
+writing manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+reading manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+writing manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge
+copying path_blocked_tcp_bridge/path_blocked_tcp_sender.py -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge
+copying path_blocked_tcp_bridge/__init__.py -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge
+running install
+running install_lib
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge
+copying /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge/path_blocked_tcp_sender.py -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge
+copying /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge/__init__.py -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge
+byte-compiling /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge/path_blocked_tcp_sender.py to path_blocked_tcp_sender.cpython-310.pyc
+byte-compiling /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/share/ament_index
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/share/ament_index/resource_index
+creating /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/share/ament_index/resource_index/packages
+copying resource/path_blocked_tcp_bridge -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/share/ament_index/resource_index/packages
+copying package.xml -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/share/path_blocked_tcp_bridge
+running install_egg_info
+Copying ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge-0.0.0-py3.10.egg-info
+running install_scripts
+Installing path_blocked_tcp_sender script to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/path_blocked_tcp_bridge
+writing list of installed files to '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log'

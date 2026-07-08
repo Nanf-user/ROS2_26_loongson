@@ -1,0 +1,116 @@
+slam_toolbox:
+  ros__parameters:
+    # 求解器插件，指定使用的求解器类型
+    solver_plugin: solver_plugins::CeresSolver
+    # Ceres求解器的线性求解器类型，这里使用稀疏Cholesky分解
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    # Ceres求解器的预处理器类型，这里使用SCHUR_JACOBI预处理器
+    ceres_preconditioner: SCHUR_JACOBI
+    # Ceres求解器的信任策略，使用Levenberg-Marquardt算法
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    # Ceres求解器的狗腿类型，使用传统狗腿算法
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    # Ceres求解器的损失函数，这里设置为None
+    ceres_loss_function: None
+
+    # ROS相关参数
+    # 里程计坐标系名称
+    odom_frame: odom
+    # 地图坐标系名称
+    map_frame: map
+    # 机器人基座坐标系名称
+    base_frame: base_footprint
+    # 激光扫描话题名称，用于接收激光扫描数据
+    scan_topic: /scan
+    # 模式选择，这里设置为mapping表示建图模式，还可以设置为localization表示定位模式
+    mode: mapping 
+
+    # 如果想要在启动时基于地图和位姿进行定位，可以取消下面注释并设置相应参数
+    #map_file_name: test_steve
+    #map_start_pose: [5.0, 1.0, 0.0]
+
+    # 是否开启调试日志记录，设置为false表示不开启
+    debug_logging: false
+    # 节流扫描数据，这里设置为1，具体含义可能与扫描数据的处理频率相关
+    throttle_scans: 1
+    # 发布变换的时间间隔，单位为秒，设置为0表示从不发布里程计
+    transform_publish_period: 0.01
+    # 地图更新间隔，单位为秒
+    map_update_interval: 0.5
+    # 地图分辨率，单位为米
+    resolution: 0.01
+    # 激光最大测量范围，用于光栅化图像，单位为米
+    max_laser_range: 6.0 
+    # 最小时间间隔，单位为秒，可能用于控制某些操作的时间间隔
+    minimum_time_interval: 0.2
+    # TF缓冲区的持续时间，单位为秒，用于存储TF变换数据
+    tf_buffer_duration: 30.
+    # 用于序列化大地图时程序所需的栈大小
+    stack_size_to_use: 80000000 
+
+    # 通用参数
+    # 是否使用扫描匹配，设置为true表示使用
+    use_scan_matching: true
+    # 是否使用扫描重心，设置为true表示使用
+    use_scan_barycenter: true
+    # 最小移动距离，单位为米，用于判断机器人是否移动足够距离触发某些操作
+    minimum_travel_distance: 0.05
+    # 最小移动角度，单位为弧度，用于判断机器人是否转动足够角度触发某些操作
+    minimum_travel_heading: 0.05
+    # 扫描缓冲区大小，可能用于存储一定数量的扫描数据
+    scan_buffer_size: 3
+    # 扫描缓冲区中最大扫描距离，单位为米
+    scan_buffer_maximum_scan_distance: 10.0
+    # 链接匹配的最小响应（精细匹配），用于扫描匹配中的响应判断
+    link_match_minimum_response_fine: 0.1
+    # 链接扫描的最大距离，单位为米
+    link_scan_maximum_distance: 1.5
+    # 是否进行回环检测，设置为true表示进行
+    do_loop_closing: true 
+    # 回环匹配的最小链大小，可能与回环检测的相关操作有关
+    loop_match_minimum_chain_size: 3
+    # 回环匹配的最大方差（粗略匹配），用于回环检测中的方差判断
+    loop_match_maximum_variance_coarse: 3.0  
+    # 回环匹配的最小响应（粗略匹配），用于回环检测中的响应判断
+    loop_match_minimum_response_coarse: 0.35    
+    # 回环匹配的最小响应（精细匹配），用于回环检测中的响应判断
+    loop_match_minimum_response_fine: 0.45
+
+    # 相关性参数 - 相关性搜索空间维度，单位为米
+    correlation_search_space_dimension: 1.5
+    # 相关性搜索空间分辨率，单位为米
+    correlation_search_space_resolution: 0.005
+    # 相关性搜索空间的模糊偏差，用于相关性搜索操作
+    correlation_search_space_smear_deviation: 0.01 
+
+    # 相关性参数 - 回环搜索空间维度，单位为米
+    loop_search_space_dimension: 8.0
+    # 回环搜索空间分辨率，单位为米
+    loop_search_space_resolution: 0.01
+    # 回环搜索空间的模糊偏差，用于回环搜索操作
+    loop_search_space_smear_deviation: 0.1
+    # 回环搜索的最大距离，单位为米
+    loop_search_maximum_distance: 3.0
+
+    # 扫描匹配器参数
+    # 距离方差惩罚系数，用于扫描匹配中的距离方差处理
+    distance_variance_penalty: 0.5
+    # 角度方差惩罚系数，用于扫描匹配中的角度方差处理
+    angle_variance_penalty: 1.0    
+
+    # 精细搜索角度偏移，单位为弧度，用于扫描匹配的精细搜索操作
+    fine_search_angle_offset: 0.00349     
+    # 粗略搜索角度偏移，单位为弧度，用于扫描匹配的粗略搜索操作
+    coarse_search_angle_offset: 0.349   
+    # 粗略搜索角度分辨率，单位为弧度，用于扫描匹配的粗略搜索操作
+    coarse_angle_resolution: 0.017        
+    # 最小角度惩罚系数，用于扫描匹配中的角度惩罚处理
+    minimum_angle_penalty: 0.6
+    # 最小距离惩罚系数，用于扫描匹配中的距离惩罚处理
+    minimum_distance_penalty: 0.4
+    # 是否使用响应扩展，设置为true表示使用
+    use_response_expansion: true
+    # 最小通过次数，可能用于某些扫描匹配的判断条件
+    min_pass_through: 2
+    # 占用阈值，用于地图构建中的占用判断
+    occupancy_threshold: 0.1

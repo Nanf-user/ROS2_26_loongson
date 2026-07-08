@@ -1,0 +1,8 @@
+source;share/e06_map_server/hook/cmake_prefix_path.ps1
+source;share/e06_map_server/hook/cmake_prefix_path.dsv
+source;share/e06_map_server/hook/cmake_prefix_path.sh
+source;share/e06_map_server/local_setup.bash
+source;share/e06_map_server/local_setup.dsv
+source;share/e06_map_server/local_setup.ps1
+source;share/e06_map_server/local_setup.sh
+source;share/e06_map_server/local_setup.zsh

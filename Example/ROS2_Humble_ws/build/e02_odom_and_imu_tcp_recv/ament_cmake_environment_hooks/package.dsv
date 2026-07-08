@@ -1,0 +1,4 @@
+source;share/e02_odom_and_imu_tcp_recv/local_setup.bash
+source;share/e02_odom_and_imu_tcp_recv/local_setup.dsv
+source;share/e02_odom_and_imu_tcp_recv/local_setup.sh
+source;share/e02_odom_and_imu_tcp_recv/local_setup.zsh

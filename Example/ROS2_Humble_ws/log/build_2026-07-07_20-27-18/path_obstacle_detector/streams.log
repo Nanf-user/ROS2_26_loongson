@@ -1,0 +1,22 @@
+[1.494s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/path_obstacle_detector': PYTHONPATH=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_obstacle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_obstacle_detector build --build-base /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/build install --record /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/install.log --single-version-externally-managed install_data
+[1.800s] running egg_info
+[1.802s] writing ../../build/path_obstacle_detector/path_obstacle_detector.egg-info/PKG-INFO
+[1.803s] writing dependency_links to ../../build/path_obstacle_detector/path_obstacle_detector.egg-info/dependency_links.txt
+[1.803s] writing entry points to ../../build/path_obstacle_detector/path_obstacle_detector.egg-info/entry_points.txt
+[1.803s] writing requirements to ../../build/path_obstacle_detector/path_obstacle_detector.egg-info/requires.txt
+[1.803s] writing top-level names to ../../build/path_obstacle_detector/path_obstacle_detector.egg-info/top_level.txt
+[1.806s] reading manifest file '../../build/path_obstacle_detector/path_obstacle_detector.egg-info/SOURCES.txt'
+[1.808s] writing manifest file '../../build/path_obstacle_detector/path_obstacle_detector.egg-info/SOURCES.txt'
+[1.808s] running build
+[1.808s] running build_py
+[1.809s] running install
+[1.809s] running install_lib
+[1.811s] running install_data
+[1.811s] running install_egg_info
+[1.813s] removing '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_obstacle_detector/lib/python3.10/site-packages/path_obstacle_detector-0.1.0-py3.10.egg-info' (and everything under it)
+[1.814s] Copying ../../build/path_obstacle_detector/path_obstacle_detector.egg-info to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_obstacle_detector/lib/python3.10/site-packages/path_obstacle_detector-0.1.0-py3.10.egg-info
+[1.816s] running install_scripts
+[1.850s] Installing path_obstacle_detector script to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_obstacle_detector/lib/path_obstacle_detector
+[1.850s] Installing test_publisher script to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_obstacle_detector/lib/path_obstacle_detector
+[1.851s] writing list of installed files to '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/install.log'
+[1.885s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/path_obstacle_detector' returned '0': PYTHONPATH=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_obstacle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_obstacle_detector build --build-base /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/build install --record /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_obstacle_detector/install.log --single-version-externally-managed install_data

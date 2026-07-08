@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/PKG-INFO
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/dependency_links.txt
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/entry_points.txt
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/requires.txt
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/top_level.txt
+../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/zip-safe
+path_blocked_tcp_bridge/__init__.py
+path_blocked_tcp_bridge/path_blocked_tcp_sender.py
+resource/path_blocked_tcp_bridge
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

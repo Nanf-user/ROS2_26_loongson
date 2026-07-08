@@ -1,0 +1,24 @@
+[1.700s] Invoking command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/path_blocked_tcp_bridge': PYTHONPATH=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_blocked_tcp_bridge build --build-base /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build install --record /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log --single-version-externally-managed install_data
+[2.052s] running egg_info
+[2.053s] writing ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/PKG-INFO
+[2.053s] writing dependency_links to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/dependency_links.txt
+[2.056s] writing entry points to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/entry_points.txt
+[2.056s] writing requirements to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/requires.txt
+[2.056s] writing top-level names to ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/top_level.txt
+[2.057s] reading manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+[2.058s] writing manifest file '../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info/SOURCES.txt'
+[2.058s] running build
+[2.058s] running build_py
+[2.058s] copying path_blocked_tcp_bridge/path_blocked_tcp_sender.py -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge
+[2.059s] running install
+[2.059s] running install_lib
+[2.060s] copying /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build/lib/path_blocked_tcp_bridge/path_blocked_tcp_sender.py -> /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge
+[2.061s] byte-compiling /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge/path_blocked_tcp_sender.py to path_blocked_tcp_sender.cpython-310.pyc
+[2.062s] running install_data
+[2.063s] running install_egg_info
+[2.065s] removing '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[2.066s] Copying ../../build/path_blocked_tcp_bridge/path_blocked_tcp_bridge.egg-info to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages/path_blocked_tcp_bridge-0.0.0-py3.10.egg-info
+[2.067s] running install_scripts
+[2.100s] Installing path_blocked_tcp_sender script to /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/path_blocked_tcp_bridge
+[2.101s] writing list of installed files to '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log'
+[2.145s] Invoked command in '/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/src/path_blocked_tcp_bridge' returned '0': PYTHONPATH=/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/path_blocked_tcp_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_blocked_tcp_bridge build --build-base /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/build install --record /home/niuwa/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/build/path_blocked_tcp_bridge/install.log --single-version-externally-managed install_data

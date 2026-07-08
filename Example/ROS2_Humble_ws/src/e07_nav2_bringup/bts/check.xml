@@ -1,0 +1,125 @@
+<!--
+  文档注释块：行为树整体功能说明
+  This Behavior Tree replans the global path periodically at 1 Hz and it also has
+  recovery actions specific to planning / control as well as general system issues.
+  This will be continuous if a kinematically valid planner is selected.
+  翻译：
+  本行为树以1Hz频率周期性重新计算全局路径；同时内置针对路径规划、轨迹跟踪以及通用系统故障的恢复动作。
+  若选用满足机器人运动学约束的合法规划器，导航流程将持续循环执行。
+-->
+<!-- 根节点定义，整个行为树入口 -->
+<root main_tree_to_execute="MainTree">
+  <!-- 定义ID为MainTree的行为树主体 -->
+  <BehaviorTree ID="MainTree">
+    <!--
+      顶层恢复节点 RecoveryNode
+      参数 number_of_retries="6"：整个导航流程最多重试6次
+      name="NavigateRecovery"：节点别名，日志/调试标识
+      逻辑：子树（正常导航流程）执行失败时，进入下方恢复分支；最多重试6轮，6次全部失败则整棵树返回失败
+    -->
+    <RecoveryNode number_of_retries="6" name="NavigateRecovery">
+      <!--
+        流水线序列节点 PipelineSequence
+        序列逻辑：从左到右依次执行所有子节点，全部成功才返回成功；任意一个子节点失败则整体失败，触发上层RecoveryNode恢复逻辑
+        内部分为两大段：1.周期性全局路径规划；2.局部轨迹跟踪
+      -->
+      <PipelineSequence name="NavigateWithReplanning">
+        <!--
+          频率控制器 RateController
+          参数 hz="1.0"：限制内部子树最大执行频率1Hz，即每秒最多重新规划1次全局路径，避免频繁重规划占用算力
+          作用：包裹路径规划逻辑，控制重规划周期
+        -->
+        <RateController hz="1.0">
+          <!--
+            路径规划层级恢复节点，最多重试1次规划
+            number_of_retries="1"：首次规划失败后，仅重试1次；重试失败则该分支整体失败，抛出至上层PipelineSequence
+            name="ComputePathToPose"：规划恢复单元标识
+          -->
+          <RecoveryNode number_of_retries="1" name="ComputePathToPose">
+            <!--
+              全局路径规划动作节点 ComputePathToPose
+              goal="{goal}"：输入端口，绑定全局目标位姿变量
+              path="{path}"：输出端口，生成的全局路径存入path变量供后续跟踪使用
+              planner_id="GridBased"：选用GridBased网格规划器（A*、Smac等网格类规划器）
+              功能：从机器人当前位姿规划一条从起点到目标的全局导航路径
+            -->
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+            <!--
+              清除全局代价地图动作节点
+              name="ClearGlobalCostmap-Context"：调试名称
+              service_name="global_costmap/clear_entirely_global_costmap"：调用全局代价地图清除服务，清空全局地图所有障碍物标记
+              执行时机：每次成功规划路径后自动清空全局代价地图，消除过期障碍物噪点
+            -->
+            <ClearEntireCostmap name="ClearGlobalCostmap-Context" service_name="global_costmap/clear_entirely_global_costmap"/>
+          </RecoveryNode>
+        </RateController>
+        <!--
+          轨迹跟踪层级恢复节点，最多重试1次轨迹跟随
+          number_of_retries="1"：路径跟踪失败后重试1次；重试仍失败则PipelineSequence整体失败，触发顶层恢复
+          name="FollowPath"：轨迹跟踪恢复单元标识
+        -->
+        <RecoveryNode number_of_retries="1" name="FollowPath">
+          <!--
+            局部轨迹跟踪动作节点 FollowPath
+            path="{path}"：读取前面规划好的全局路径
+            controller_id="FollowPath"：选用FollowPath局部控制器（DWA、Pure Pursuit等）
+            功能：根据全局路径输出速度指令，控制机器人沿路径行驶
+          -->
+          <FollowPath path="{path}" controller_id="FollowPath"/>
+          <!--
+            清除局部代价地图动作节点
+            name="ClearLocalCostmap-Context"：调试标识
+            service_name="local_costmap/clear_entirely_local_costmap"：调用局部代价地图清除服务
+            执行时机：每次轨迹跟踪完成后清空局部地图，清除临时动态障碍物残留
+          -->
+          <ClearEntireCostmap name="ClearLocalCostmap-Context" service_name="local_costmap/clear_entirely_local_costmap"/>
+        </RecoveryNode>
+      </PipelineSequence>
+      <!--
+        响应式选择节点 ReactiveFallback（故障恢复总入口）
+        逻辑：从左向右遍历子节点，找到第一个返回成功的分支执行；左侧节点优先级更高
+        特性：Reactive类型会持续检测左侧节点状态，目标更新时立即中断恢复动作，直接跳转新目标
+      -->
+      <ReactiveFallback name="RecoveryFallback">
+        <!--
+          目标更新检测节点 GoalUpdated
+          功能：检测用户是否下发了新导航目标
+          返回逻辑：收到新目标则返回Success；无新目标返回Failure
+          优先级最高：只要有新目标，直接结束所有恢复动作，重新进入正常导航流程
+        -->
+        <GoalUpdated/>
+        <!--
+          轮询节点 RoundRobin：循环轮流执行内部子恢复动作
+          逻辑：第一次故障执行第一个子树；再次故障执行第二个；第三次执行第三个，循环往复
+          作用：分级尝试不同脱困策略，从轻到重依次尝试
+        -->
+        <RoundRobin name="RecoveryActions">
+          <!--
+            序列节点 Sequence：内部两个清除地图动作必须全部执行完成才算成功
+            脱困策略1：先清局部代价地图，再清全局代价地图，消除误检测障碍物
+          -->
+          <Sequence name="ClearingActions">
+            <!-- 清除局部代价地图：清除机器人周边局部障碍物标记 -->
+            <ClearEntireCostmap name="ClearLocalCostmap-Subtree" service_name="local_costmap/clear_entirely_local_costmap"/>
+            <!-- 清除全局代价地图：清除整张全局地图障碍物标记 -->
+            <ClearEntireCostmap name="ClearGlobalCostmap-Subtree" service_name="global_costmap/clear_entirely_global_costmap"/>
+          </Sequence>
+          <!-- 注释掉原地自旋脱困动作，spin_dist=1.57为原地旋转弧度，当前禁用 -->
+          <!-- <Spin spin_dist="1.57"/> -->
+          <!--
+            脱困策略2：原地等待5秒
+            wait_duration="5"：阻塞5秒，等待动态障碍物自行离开（行人、临时遮挡物）
+          -->
+          <Wait wait_duration="5"/>
+          <!--
+            脱困策略3：后退脱困
+            backup_dist="0.30"：后退总距离0.3米
+            backup_speed="0.05"：后退线速度0.05m/s
+            适用于机器人前方被障碍物卡死、无法前进的场景
+          -->
+          <BackUp backup_dist="0.30" backup_speed="0.05"/>
+        </RoundRobin>
+      </ReactiveFallback>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>

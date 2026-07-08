@@ -1,0 +1,36 @@
+<!--
+  修改要点：
+  1. 移除 RateController 和内部的重规划节点，只在开头执行一次 ComputePathToPose。
+  2. FollowPath 重试次数设为很大（100），避免因时间过长而放弃。
+  3. FollowPath 恢复动作仅清除局部代价地图并等待5秒。
+  4. 保留外层 RecoveryFallback 作为最后的保险（一般不会触发）。
+-->
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RecoveryNode number_of_retries="6" name="NavigateRecovery">
+      <PipelineSequence name="NavigateWithReplanning">
+        <!-- 先规划一次路径（不再周期重规划） -->
+        <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+        <!-- FollowPath 重试 100 次，足以等待很长时间 -->
+        <RecoveryNode number_of_retries="100" name="FollowPath">
+          <FollowPath path="{path}" controller_id="FollowPath"/>
+          <Sequence name="FollowPathRecoveryActions">
+            <ClearEntireCostmap name="ClearLocalCostmap-Context" service_name="local_costmap/clear_entirely_local_costmap"/>
+            <Wait wait_duration="5"/>
+          </Sequence>
+        </RecoveryNode>
+      </PipelineSequence>
+      <ReactiveFallback name="RecoveryFallback">
+        <GoalUpdated/>
+        <RoundRobin name="RecoveryActions">
+          <Sequence name="ClearingActions">
+            <ClearEntireCostmap name="ClearLocalCostmap-Subtree" service_name="local_costmap/clear_entirely_local_costmap"/>
+            <ClearEntireCostmap name="ClearGlobalCostmap-Subtree" service_name="global_costmap/clear_entirely_global_costmap"/>
+          </Sequence>
+          <Wait wait_duration="5"/>
+          <BackUp backup_dist="0.30" backup_speed="0.05"/>
+        </RoundRobin>
+      </ReactiveFallback>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>

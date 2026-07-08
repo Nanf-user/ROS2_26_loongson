@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>nav2_obstacle_ahead</name>
+  <version>1.0.0</version>
+  <description>Nav2 BT plugin: obstacle ahead detection and warning</description>
+  <maintainer email="dev@example.com">developer</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>behaviortree_cpp_v3</depend>      <!-- 改为 _v3 -->
+  <depend>pluginlib</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
