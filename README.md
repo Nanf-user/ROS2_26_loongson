@@ -49,7 +49,7 @@
 ## 目录结构
 
 ```
-ROS2_Humble_LS2K0300/
+ROS2_26_loongson/
 ├── Example/
 │   ├── ros2_2k0300_bridge/        # LS2K0300 嵌入式桥接程序
 │   │   ├── project/
@@ -156,7 +156,7 @@ ROS2_Humble_LS2K0300/
 ### 1. 克隆项目
 
 ```bash
-git clone <repo-url> ~/ROS2_Humble_LS2K0300
+git clone <repo-url> ~/ROS2_26_loongson
 ```
 
 ### 2. 编译 LS2K0300 嵌入式程序（交叉编译）
@@ -171,7 +171,7 @@ TOOLCHAIN_DIR="/opt/ls_2k0300_env/loongson-gnu-toolchain-8.3-x86_64-loongarch64-
 编译并部署到开发板：
 
 ```bash
-cd ~/ROS2_Humble_LS2K0300/Example/ros2_2k0300_bridge/project/user
+cd ~/ROS2_26_loongson/Example/ros2_2k0300_bridge/project/user
 bash build.sh
 ```
 
@@ -182,7 +182,7 @@ bash build.sh
 ### 3. 编译 ROS2 工作空间（上位机）
 
 ```bash
-cd ~/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws
+cd ~/ROS2_26_loongson/Example/ROS2_Humble_ws
 colcon build --symlink-install
 source install/setup.bash
 ```
@@ -194,7 +194,7 @@ source install/setup.bash
 #### 方式一：SLAM 建图 + 键盘遥控（建图模式）
 
 ```bash
-cd ~/ROS2_Humble_LS2K0300
+cd ~/ROS2_26_loongson
 bash start1.sh
 ```
 
@@ -203,7 +203,7 @@ bash start1.sh
 #### 方式二：Nav2 定位 + DWB 路径跟踪
 
 ```bash
-cd ~/ROS2_Humble_LS2K0300
+cd ~/ROS2_26_loongson
 bash start2.sh
 ```
 
@@ -212,7 +212,7 @@ bash start2.sh
 #### 方式三：完整导航 + 障碍物/阻塞检测
 
 ```bash
-cd ~/ROS2_Humble_LS2K0300
+cd ~/ROS2_26_loongson
 bash start3.sh
 ```
 
@@ -221,7 +221,7 @@ bash start3.sh
 ### 5. 手动启动单个组件
 
 ```bash
-source ~/ROS2_Humble_LS2K0300/Example/ROS2_Humble_ws/install/setup.bash
+source ~/ROS2_26_loongson/Example/ROS2_Humble_ws/install/setup.bash
 
 # 启动激光雷达
 ros2 launch e02_laser_tcp_recv ld19.launch.py
